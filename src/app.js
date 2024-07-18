@@ -6,7 +6,6 @@
 
 export const nameIsValid = (name) =>
   !!name && name.length >= 2 && /^[a-z]+$/.test(name);
-
 /**
  * Удаление пробелов из строки
  *
@@ -38,7 +37,7 @@ export const getTotal = (items = [], discount = 0) => {
   if (discount >= 100) {
     throw new Error("Процент скидки не может быть больше 100");
   }
-  
+
   const total = items.reduce((acc, item) => {
     return acc + item.price * item.quantity;
   }, 0);
