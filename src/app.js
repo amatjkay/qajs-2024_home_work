@@ -3,6 +3,9 @@
  * @param {Object} scores - Объект, в котором ключи представляют собой имена студентов, а значения - их успеваемость.
  * @returns {number} - Сумма всех баллов.
  */
+
+require("dotenv").config();
+
 function getScore(scores) {
   let sum = 0;
   for (let key in scores) {

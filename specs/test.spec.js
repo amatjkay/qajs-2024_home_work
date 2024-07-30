@@ -51,6 +51,7 @@ const makeRequest = (method, path, data) => {
 };
 
 describe("Bookstore API Tests", () => {
+  // eslint-disable-next-line no-unused-vars
   let validUserName, validPassword, userId, authToken;
 
   beforeAll(() => {
