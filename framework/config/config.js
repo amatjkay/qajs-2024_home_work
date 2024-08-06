@@ -1,9 +1,5 @@
-require("dotenv").config();
-
-const config = {
-  baseUrl: process.env.BASE_URL,
-  login: process.env.LOGIN,
-  password: process.env.PASSWORD,
+module.exports = {
+  baseUrl: "https://bookstore.demoqa.com",
+  username: "existingUser",
+  password: "Password123!",
 };
-
-module.exports = config;
